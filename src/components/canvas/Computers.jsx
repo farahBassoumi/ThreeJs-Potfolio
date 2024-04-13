@@ -3,20 +3,33 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
+const Computers = ({ isMobile }) => {
+  const computer = useGLTF("../../../desktop_pc/scene.gltf");
+  const computer1 = useGLTF("../../desktop_pc/scene.gltf");
 
-const Computers = ({isMobile}) => {
-  const computer = useGLTF("/ThreeJs-Potfolio/public/desktop_pc/scene.gltf");
+  const computer2 = useGLTF("desktop_pc/scene.gltf");
+
+  const computer3 = useGLTF("../public/desktop_pc/scene.gltf");
+  const computer4 = useGLTF("ThreeJs-Potfolio/desktop_pc/scene.gltf");
+  const computer5 = useGLTF("/ThreeJs-Potfolio/desktop_pc/scene.gltf");
+  const computer6 = useGLTF("/ThreeJs-Potfolio/public/desktop_pc/scene.gltf");
+  const computer7 = useGLTF("./ThreeJs-Potfolio/public/desktop_pc/scene.gltf");
+  const computer8 = useGLTF("./public/desktop_pc/scene.gltf");
+  const computer9 = useGLTF("./desktop_pc/scene.gltf");
+
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
-      <pointLight intensity={2}  position={isMobile ? [1,0,0] : [0,0,0.5]} />
-      <spotLight intensity={20}   position={isMobile ? { x: -20, y: 50, z: 10 } : { x: -30, y: 50, z: 0 }}
- />
+      <pointLight intensity={2} position={isMobile ? [1, 0, 0] : [0, 0, 0.5]} />
+      <spotLight
+        intensity={20}
+        position={isMobile ? { x: -20, y: 50, z: 10 } : { x: -30, y: 50, z: 0 }}
+      />
 
       <primitive
         object={computer.scene}
-        scale={isMobile? 0.58  : 0.7}
-        position={isMobile?[1,-2.3,-1]:[1, -2.85, -1]}
+        scale={isMobile ? 0.58 : 0.7}
+        position={isMobile ? [1, -2.3, -1] : [1, -2.85, -1]}
         rotation={[-0.01, -0.2, -0.05]}
       />
     </mesh>
