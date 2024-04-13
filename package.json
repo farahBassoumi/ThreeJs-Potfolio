@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://farahBassoumi.github.io/ThreeJs-Potfolio",
+  "homepage": "https://farahBassoumi.github.io/threejs-potfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
