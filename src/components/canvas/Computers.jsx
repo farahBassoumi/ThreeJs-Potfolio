@@ -2,11 +2,10 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-//import * as THREE from "three";
-//extend({ Mesh: THREE.Mesh });
+
 
 const Computers = ({isMobile}) => {
-  const computer = useGLTF("../../../public/desktop_pc/scene.gltf");
+  const computer = useGLTF("../../../desktop_pc/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />

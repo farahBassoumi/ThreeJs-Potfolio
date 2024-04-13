@@ -37,9 +37,9 @@ const Hero = () => {
         style={{ marginTop: "-20px" }}
       >
         <a href="#about">
-          {" "}
+         
           <div className="w-[32px] h-[55px]  rounded-3xl border-2 border-secondary flex justify-center items-start p-2  ">
-            <motion.dev
+            <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,

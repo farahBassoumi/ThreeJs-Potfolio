@@ -4,15 +4,13 @@ import { Canvas } from "@react-three/fiber";
 import { TextureLoader } from 'three';
 
 import {
-  Decal,
   Float,
   OrbitControls,
   Preload,
-  useTexture
 } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import CanvasLoader from "../Loader";
-const Ball = (props) => {
+const Ball = () => {
   //  const [decal]=useTexture([props.imgUrl]);
 
   return (

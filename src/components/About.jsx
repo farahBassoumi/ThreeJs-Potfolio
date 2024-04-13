@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { sectionWrapper } from "../hoc";
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <p>
+   
       <Tilt className=" w-full xs:w-[250px]">
         <motion.div
           className="w-full green-pink-gradient p-1 rounded-[20px] shadow-card"
@@ -24,7 +24,7 @@ const ServiceCard = ({ index, title, icon }) => {
           </div>
         </motion.div>
       </Tilt>
-    </p>
+   
   );
 };
 const About = () => {
