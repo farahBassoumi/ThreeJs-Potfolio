@@ -20,7 +20,7 @@ import CanvasLoader from "../Loader";
 // };
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("https://github.com/farahBassoumi/ThreeJs-Potfolio/tree/main/public/robot/scene.gltf");
+  const computer = useGLTF("http://github.com/farahBassoumi/ThreeJs-Potfolio/tree/main/public/robot/scene.gltf");
 
   return (
     <mesh>
