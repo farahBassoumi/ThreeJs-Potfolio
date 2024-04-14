@@ -2,10 +2,9 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-
+//import {computerScene} from "../../assets/desktop_pc/scene.gltf";
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("../../../desktop_pc/scene.gltf");
-  
+  const computer = useGLTF("../../assets/desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -22,6 +21,7 @@ const Computers = ({ isMobile }) => {
         position={isMobile ? [1, -2.3, -1] : [1, -2.85, -1]}
         rotation={[-0.01, -0.2, -0.05]}
       />
+    
     </mesh>
   );
 };

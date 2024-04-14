@@ -38,7 +38,7 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <div></div>
           <Navbar />
-          <Hero />
+       
         </div>
         <About />
         <Experience />
@@ -47,8 +47,7 @@ const App = () => {
         <Feedbacks />
 
         <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+      
         </div>
       </div>
     </BrowserRouter>
