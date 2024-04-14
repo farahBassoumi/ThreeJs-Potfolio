@@ -1,10 +1,26 @@
+//import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+
 //import {computerScene} from "../../assets/desktop_pc/scene.gltf";
+//  const filepath="../../../public/robot/scene.gltf";
+// const Computers = ({ isMobile }) => {
+//   const { scene } = useThree();
+//   const loader = new GLTFLoader();
+
+//   useEffect(() => {
+//     loader.load(filepath, gltf => {
+//       scene.add(gltf.scene);
+//     });
+//   }, [scene]);
+
+//   return null;
+// };
+
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("../../public/robot/scene.gltf");
+  const computer = useGLTF("https://github.com/farahBassoumi/ThreeJs-Potfolio/tree/main/public/robot/scene.gltf");
 
   return (
     <mesh>
@@ -14,14 +30,12 @@ const Computers = ({ isMobile }) => {
         intensity={20}
         position={isMobile ? { x: -20, y: 50, z: 10 } : { x: -30, y: 50, z: 0 }}
       />
-
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.58 : 0.7}
         position={isMobile ? [1, -2.3, -1] : [1, -2.85, -1]}
         rotation={[-0.01, -0.2, -0.05]}
       />
-    
     </mesh>
   );
 };
