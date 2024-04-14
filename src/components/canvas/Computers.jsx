@@ -5,17 +5,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("../../../desktop_pc/scene.gltf");
-  const computer1 = useGLTF("../../desktop_pc/scene.gltf");
-
-  const computer2 = useGLTF("desktop_pc/scene.gltf");
-
-  const computer3 = useGLTF("../public/desktop_pc/scene.gltf");
-  const computer4 = useGLTF("ThreeJs-Potfolio/desktop_pc/scene.gltf");
-  const computer5 = useGLTF("/ThreeJs-Potfolio/desktop_pc/scene.gltf");
-  const computer6 = useGLTF("/ThreeJs-Potfolio/public/desktop_pc/scene.gltf");
-  const computer7 = useGLTF("./ThreeJs-Potfolio/public/desktop_pc/scene.gltf");
-  const computer8 = useGLTF("./public/desktop_pc/scene.gltf");
-  const computer9 = useGLTF("./desktop_pc/scene.gltf");
+  
 
   return (
     <mesh>

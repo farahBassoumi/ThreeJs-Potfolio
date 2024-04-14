@@ -4,7 +4,8 @@ import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: "/ThreeJs-Potfolio/",
+
   plugins: [react(), WindiCSS()], 
-  base: "/ThreeJs-Potfolio/",
 }
 )
