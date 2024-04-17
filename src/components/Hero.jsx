@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
       <div style={{ height: "0px" }}></div>
-      <ComputersCanvas className="" />
+      <ComputersCanvas  />
 
       <div
         className=" xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20 relative "

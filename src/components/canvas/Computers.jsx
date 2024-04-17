@@ -1,27 +1,12 @@
-//import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-//import {computerScene} from "../../assets/desktop_pc/scene.gltf";
-//  const filepath="../../../public/robot/scene.gltf";
-// const Computers = ({ isMobile }) => {
-//   const { scene } = useThree();
-//   const loader = new GLTFLoader();
 
-//   useEffect(() => {
-//     loader.load(filepath, gltf => {
-//       scene.add(gltf.scene);
-//     });
-//   }, [scene]);
-
-//   return null;
-// };
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("http://github.com/farahBassoumi/ThreeJs-Potfolio/tree/main/public/robot/scene.gltf");
-
+  const computer = useGLTF("https://farahbassoumi.github.io/ThreeJs-Potfolio/computer/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
@@ -82,5 +67,4 @@ const ComputersCanvas = () => {
     </Canvas>
   );
 };
-
-export default ComputersCanvas;
+ export default ComputersCanvas;
