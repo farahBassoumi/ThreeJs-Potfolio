@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("https://farahbassoumi.github.io/threejs-potfolio/planet/scene.gltf");
+  const computer = useGLTF("https://farahbassoumi.github.io/ThreeJs-Potfolio/planet/scene.gltf");
   return (
 
  
