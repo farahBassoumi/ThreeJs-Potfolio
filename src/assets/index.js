@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import piano from "./piano.png"
 
 export {
   logo,
@@ -59,5 +60,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  bird
+  bird,
+  piano
 };

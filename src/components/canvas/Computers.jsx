@@ -6,12 +6,12 @@ import CanvasLoader from "../Loader";
 
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("https://farahbassoumi.github.io/ThreeJs-Potfolio/robot/scene.gltf");
-  return (
+  //const computer = useGLTF("https://farahbassoumi.github.io/ThreeJs-Potfolio/robot/scene.gltf");
+  const computer = useGLTF("./planet/scene.gltf");
 
- 
- 
-   
+
+  
+  return (
         <mesh>
           <hemisphereLight intensity={1} groundColor="black" />
           <pointLight intensity={2} position={isMobile ? [1, 0, 0] : [0, 0, 0.5]} />

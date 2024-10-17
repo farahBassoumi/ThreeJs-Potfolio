@@ -1,0 +1,11 @@
+Model Information:
+* title:	Laptop Holoscreen
+* source:	https://sketchfab.com/3d-models/laptop-holoscreen-f579a2912f8f4493a34fa0fe56abd247
+* author:	Inditrion Dradnon (https://sketchfab.com/dradnon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Laptop Holoscreen" (https://sketchfab.com/3d-models/laptop-holoscreen-f579a2912f8f4493a34fa0fe56abd247) by Inditrion Dradnon (https://sketchfab.com/dradnon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

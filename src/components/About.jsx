@@ -31,24 +31,31 @@ const About = () => {
   return (
     <div className="">
       <motion.div variants={textVariant()}>
-        <p className={styles.heroSubText}>Intoduction</p>
-        <h2 className={styles.heroHeadText}>Overview.</h2>
+        {/* <p className={styles.heroSubText}>Intoduction</p> */}
+        <h2 className={styles.heroHeadText}>About Me.</h2>
       </motion.div>
 
       <motion.p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am a full stack developer with a focus on front end development. I
-        have a passion for creating beautiful and functional websites and
-        applications. I have experience working with a variety of technologies
-        including React, Node.js, and MongoDB. I am always eager to learn new
-        things and improve my skills. I am a team player and enjoy collaborating
-        with others to create great products. I am currently seeking new
-        opportunities to further develop my skills and grow as a developer.
+
+
+An enthousiastic full-stack developer and a fourth-year
+ Software Engineering student at INSAT, deeply passionate about DevOps and Web Development.
+ <br /> I excel at building
+  visually engaging and highly functional websites and applications, with a strong ability to quickly adapt to emerging technologies. 
+<br />
+Driven by a desire to constantly grow, I am committed to expanding my knowledge and honing my skills, while working 
+collaboratively to create impactful solutions. <br /> I am particularly excited to leverage my expertise in Web Development
+ and Machine Learning to tackle real-world challenges, staying ahead by embracing new tools and frameworks in a rapidly
+  evolving tech landscape.
+
+
+
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center mx-auto ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
