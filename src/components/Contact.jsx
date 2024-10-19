@@ -29,18 +29,18 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-    .send(
-      "service_0tm1zgn",
-      "template_0g6bs6r",
-      {
-        from_name: form.name,
-        to_name: "farah",
-        from_email: form.email,
-        to_email: "farah.bassoumi@insat.ucar.tn",
-        message: form.message,
-      },
-      "RGYTk_M6A3fQ-XwBJ"
-    )
+      .send(
+        "service_0tm1zgn",
+        "template_0g6bs6r",
+        {
+          from_name: form.name,
+          to_name: "farah",
+          from_email: form.email,
+          to_email: "farah.bassoumi@insat.ucar.tn",
+          message: form.message,
+        },
+        "RGYTk_M6A3fQ-XwBJ"
+      )
       .then(
         () => {
           setLoading(false);
@@ -75,6 +75,18 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="m-12 flex flex-col gap-8"
         >
+
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your email address</span>
+            <input
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="what's your email address ?"
+              type="email"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary outline-none border-none font-medium rounded-lg"
+            />
+          </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your name</span>
             <input
@@ -83,17 +95,6 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="what's your name ?"
               type="text"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary outline-none border-none font-medium rounded-lg"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="what's your email ?"
-              type="email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary outline-none border-none font-medium rounded-lg"
             />
           </label>

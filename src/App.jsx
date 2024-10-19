@@ -42,13 +42,16 @@ const App = () => {
         </div>
         <About />
         <Experience />
+        <div className="h-[40px]"></div>
         <Tech />
+        <div className="h-[100px]"></div>
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
+        <div className="h-[100px]"></div>
 
         <div className="relative z-0">
-        {/* <Contact />
-        <StarsCanvas /> */}
+         <Contact />
+        <StarsCanvas /> 
         </div>
       
       </div>

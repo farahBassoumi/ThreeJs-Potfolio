@@ -15,10 +15,10 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
       <Tilt
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-        options={{ max: 45, scale: 1, speed: 450 }}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] h-[500px] w-full"
+        options={{ max: 40, scale: 1, speed: 450 }}
       >
         <div className="relative full h-[230px]">
           <img
@@ -35,8 +35,8 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="github"
-                className="w-3/4 h-3/4 object-contain"
-              />
+                className="w-5/6 h-5/6 object-contain transition-transform duration-300 hover:scale-150"
+                />
             </div>
           </div>
         </div>
@@ -57,19 +57,22 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.heroSubText}>my projects</p>
-        <h2 className={styles.heroHeadText}>projects.</h2>
+        {/* <p className={styles.heroSubText}>my projects</p> */}
+        <h2 className={styles.heroHeadText}>My projects.</h2>
       </motion.div>
       <div className="flex full-w">
         <motion.p
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("right", "tween", 0.5, 1)}
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          The following projects showcases my skills and experience through
+          real-world examples.
+           
+          <br />Each project is accompanied with a small description and a
+          link to the code repository. <br />
+           {/* It reflects my
           ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          and manage projects effectively. */}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7 ">

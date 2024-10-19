@@ -1,29 +1,52 @@
 import {
-  mobile,
+  //tech
+  C,
+  C_plus,
+  C_sharp,
+  js,
+  Microsoft_Azure,
+  nest,
+  NET_Core,
+  react,
+  Python,
+  postgres,
+  ts,
+  angular,
+  figma,
+  git,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  tailwind,
+  typescript,
+  threejs,
+  java,
+
+  logo,
   backend,
   creator,
+  mobile,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  menu,
+  close,
+
+  bird,
   piano,
+
+  //companies
+  singleClic,
+  GTa,
+  MsSolutions,
+  walking_aiesec,
+  walking_logo,
+//projects
+birdy,
+studyflux,
+ProjectTracker
+
+
+
 } from "../assets";
 
 export const navLinks = [
@@ -75,34 +98,33 @@ const services = [
     
 
 const technologies = [
- 
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
+
   {
     name: "React JS",
     icon: reactjs,
   },
+
   {
     name: "Angular TS",
-    icon: reactjs,
+    icon: angular,
   },
   {
-    name: ".NET",
-    icon: redux,
+    name: "Three JS",
+    icon: threejs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "NET_Core",
+    icon: NET_Core,
+  },  
+ 
+  {
+    name: "nest",
+    icon: nest,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Microsoft_Azure",
+    icon: Microsoft_Azure,
   },
   {
     name: "MongoDB",
@@ -110,55 +132,53 @@ const technologies = [
   },
   {
     name: " SQL SERVER",
-    icon: mongodb,
+    icon: postgres,
   },
+
+ 
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
+  // {
+  //   name: "C_sharp",
+  //   icon: C_sharp,
+  // },
+ 
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Tailwind CSS",
+    icon: C_plus,
+  }, 
+   {
+    name: "figma",
+    icon: figma,
   },
   {
     name: "git",
     icon: git,
   },
+ 
   {
-    name: "figma",
-    icon: figma,
+    name: "Python",
+    icon: Python
   },
 
-  {
-    name: "C",
-    icon: docker,
-  },
-  {
-    name: "C++",
-    icon: docker,
-  },
 
-  {
-    name: "PYTHON",
-    icon: docker,
-    
-  },
-  {
-    name: "POSTGRES",
-    icon: docker,
-  },
-
-  // C, C++, Java, C#, SQL, JavaScript, Typescript, Python
-  // Technologies: Angular , React , Nest JS , Microsoft .NET (Web Api, MVC, MAUI, Identity), TailWindCSS
-  // Database Systems Management: Database Administration, Database Optimisation, Microsoft SQL Server,
-  // PostgreSQL, MongoDB , MySQL , PL/SQL
 ];
 
 const experiences = [
   {
     title: "Backend Developer",
     company_name: "SingleClic, EGYPT",
-    icon: starbucks,
-    iconBg: "#383E56",
+    icon: singleClic,
+    iconBg: "#E6DEDD",
     date: "Jun 2024 - Sept 2024",
     points: [
-      "working on a concrete e-commerce web application 'COVETI' using Microsoft .NET MVC, ensuring high performance and optimizing some of its functionalities.",
+      "working on a concrete e-commerce web application 'COVETI ' using Microsoft .NET MVC, ensuring high performance and optimizing some of its functionalities.",
       "Deploying a .NET MAUI desktop application in a professional environment.",
       "Actively participating in daily meetings and code reviews, providing constructive feedback to improve team performance.",
       "Collaborating with cross-functional teams, including testers and developers, to deliver high-quality solutions.",
@@ -167,7 +187,7 @@ const experiences = [
   {
     title: "Fullstack Developer",
     company_name: "MsSolutions, TUNISIA",
-    icon: tesla,
+    icon: MsSolutions,
     iconBg: "#E6DEDD",
     date: "Jun 2023 - Sept 2023",
     points: [
@@ -180,8 +200,8 @@ const experiences = [
   {
     title: "Web Teacher",
     company_name: "Aiesec Istanbul, TURKEY",
-    icon: shopify,
-    iconBg: "#383E56",
+    icon: walking_aiesec,
+    iconBg: "#E6DEDD",
     date: "JUNE 2022 - JULY 2023",
     points: [
       "Teaching the basics of HTML and CSS  to young student .",
@@ -227,27 +247,24 @@ const projects = [
       "AI powered studying platform integrated with the Gemini API. It provides students with multiple functionalities such as generating flashcards, quizzes, resumes and talk with a scholar ChatBot .",
     tags: [
       {
-        name: "react TS",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
+    
       {
-        name: "tailwind",
-        color: "purple-text-gradient",
-      },
-      {
-        name: "Asp.Net Core Web Api",
+        name: ".net core",
         color: "yellow-text-gradient",
       },
       {
-        name: "Gemini API",
+        name: "gemini API",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: studyflux,
     source_code_link: "https://github.com/Fabeure/Studyfied",
   },
   {
@@ -257,42 +274,46 @@ const projects = [
       "A psychological blog web application with role-based UI, authentication, and JWT authorization. It enables users to upload, like, comment and save blogs and to connect and follow other users",
     tags: [
       {
-        name: "ASP.NET Core MVC",
+        name: ".net core MVC",
         color: "blue-text-gradient",
       },
       {
-        name: ".NET Identity",
-        color: "blue-text-gradient",
+        name: ".net Identity",
+        color: "pink-text-gradient",
       },
       {
-        name: "Angular 16 ",
+        name: "angular 16 ",
         color: "green-text-gradient",
       },
      
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: birdy,
+    source_code_link: "https://github.com/farahBassoumi/birdy-front",
   },
   {
-    name: "Trip Guide",
+    name: "PROJECT TRACKER",
     description:
-    //
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    // Powered by NestJS 5, React 5, and PostgreSQL
+      "a Project Tracker web application built based on event-driven architecture using SSE and WebSockets for real-time tracking.  It allows users manage projects and assign tasks to other users in a flexible effective way.",
     tags: [
       {
-        name: "nextjs",
+        name: "nestJs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "sse",
         color: "pink-text-gradient",
       },
+      {
+        name: "webSockets",
+        color: "purple-text-gradient",
+      },
     ],
-    image: tripguide,
+    image: ProjectTracker,
     source_code_link: "https://github.com/farahBassoumi/ProjectTracker-NestJS",
   },
 ];
