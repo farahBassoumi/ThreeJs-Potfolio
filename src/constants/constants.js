@@ -44,7 +44,7 @@ import {
   devops,
 //projects
 birdy,
-studyflux,
+studyFlux,
 ProjectTracker
 
 
@@ -266,7 +266,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: studyflux,
+    image: studyFlux,
     source_code_link: "https://github.com/Fabeure/Studyfied",
   },
   {

@@ -48,7 +48,7 @@ import github from "./github.png";
 
 
 
-import studyflux from "./projects/studyFlux.png";
+import studyFlux from "./projects/studyFlux.png";
 import ProjectTracker from "./projects/ProjectTracker.png";
 import birdy from "./projects/birdy.png";
 
@@ -101,7 +101,7 @@ devops,
   walking_logo,
 
   //projects
-  studyflux,
+  studyFlux,
   ProjectTracker,
   birdy
 
