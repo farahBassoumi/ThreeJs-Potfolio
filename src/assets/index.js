@@ -49,7 +49,7 @@ import github from "./github.png";
 
 
 import studyFlux from "./projects/studyFlux.png";
-import ProjectTracker from "./projects/ProjectTracker.png";
+import ProjectTracker from "./projects/projectTracker.png";
 import birdy from "./projects/birdy.png";
 
 
