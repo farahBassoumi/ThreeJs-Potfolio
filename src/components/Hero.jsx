@@ -2,6 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
+import {  textVariant } from "../utils/motion";
+const fadeIn = (direction, easing, delay, duration) => ({
+  initial: {
+    opacity: 0,
+    x: direction === "left" ? 100 : -100, // Adjust the start position
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: easing || "spring", // Use spring for smoother animations
+      damping: 25, // Adds smoothness to the spring effect
+      stiffness: 200, // Controls the speed of the spring motion
+      delay: delay || 0,
+      duration: duration || 1, // Duration of the fade-in effect
+    },
+  },
+});
+
 
 const Hero = () => {
   return (
@@ -23,14 +42,43 @@ const Hero = () => {
           <h1 className={` ${styles.heroHeadText} text-white `}>
             Hi, I'm <span className="text-[#804af3] ">Farah</span>
           </h1>
-          <p className={` ${styles.heroSubText} mt-2 text-white-100`}>
-            I deveolp 3D visuals  users
-            <br className="sm:block hidden " /> interfaces and web applications
-          </p>
+          <div className={` ${styles.heroSubText} font-light`}>
+          <motion.div
+    variants={fadeIn("right", "spring", 0.1, 2.5)} // First sentence with delay 0.2
+    initial="initial"
+    animate="animate"
+  >
+    <p>Software engineering student</p>
+  </motion.div>
+  
+  <motion.div
+    variants={fadeIn("right", "spring", 0.6, 2.5)} // Second sentence with delay 0.4
+    initial="initial"
+    animate="animate"
+  >
+    <p>Full stack web developer</p>
+  </motion.div>
+
+  {/* <motion.div
+    variants={fadeIn("right", "spring", 1, 3.5)} // Third sentence with delay 0.6
+    initial="initial"
+    animate="animate"
+  >
+    <p>Machine learning intern</p>
+  </motion.div> */}
+
+  <motion.div
+    variants={fadeIn("right", "spring", 1.4, 4.5)} // Fourth sentence with delay 0.8
+    initial="initial"
+    animate="animate"
+  >
+    <p>DevOps enthusiast</p>
+  </motion.div>
+    </div>
         </div>
       </div>
-      <div style={{ height: "0px" }}></div>
       <ComputersCanvas  />
+      <div style={{ height: "20px" }}></div>
 
       <div
         className=" xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20 relative "

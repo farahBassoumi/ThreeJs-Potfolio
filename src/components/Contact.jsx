@@ -6,6 +6,8 @@ import { styles } from "../style";
 import { slideIn } from "../utils/motion";
 import { sectionWrapper } from "../hoc";
 import { EarthCanvas } from "./canvas";
+import Swal from 'sweetalert2';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -23,7 +25,28 @@ const Contact = () => {
       [name]: value,
     });
   };
-
+  const handleSubmit = (e) => {
+    console.log('handleSubmit');
+    e.preventDefault();
+    Swal.fire({
+      title: 'Thank you!',
+      text: 'I will get back to you as soon as possible.',
+      icon: 'success',
+      confirmButtonText: 'OK',
+      confirmButtonColor: '#732d91',
+      background: '#2c2c2e',  // Dark background
+      color: '#8e44ad',       // White text color
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown animate__slow',  // Smooth fade-in
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp animate__slow',   // Smooth fade-out
+      },
+      timer: 3000,             // Display duration (5 seconds)
+     // timerProgressBar: true,  // Show timer progress
+    });
+  }
+/*
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -44,7 +67,15 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possimble.");
+          Swal.fire({
+            title: 'Thank you!',
+            text: 'I will get back to you as soon as possible.',
+            icon: 'success',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#3085d6',
+            background: '#fff',
+          });
+        //  alert("Thank you. I will get back to you as soon as possimble.");
 
           setForm({
             name: "",
@@ -60,6 +91,7 @@ const Contact = () => {
         }
       );
   };
+  */
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
@@ -67,8 +99,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl "
       >
-        <p className={`${styles.sectionSubText}`}> Get in touch</p>
-        <h3 className={`${styles.sectionHeadText}`}>Contact</h3>
+        <p className={`${styles.sectionSubText}`}> let's Get in touch</p>
+        <h3 className={`${styles.sectionHeadText}`}>Contact Me</h3>
 
         <form
           ref={formRef}
@@ -77,7 +109,6 @@ const Contact = () => {
         >
 
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email address</span>
             <input
               name="email"
               value={form.email}
@@ -88,7 +119,6 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your name</span>
             <input
               name="name"
               value={form.name}
@@ -99,13 +129,12 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="Speak your mind.."
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

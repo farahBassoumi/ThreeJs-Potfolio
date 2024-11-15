@@ -142,6 +142,13 @@
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
+.light-purple{
+  color:"#f9d9ff";
+}
+/* .shadow-navbar-active{
+  textShadow: '10px 10px 25px rgba(138, 43, 226, 1)'    ;        
+
+} */
 
 .black-gradient {
   background: #000000; /* fallback for old browsers */

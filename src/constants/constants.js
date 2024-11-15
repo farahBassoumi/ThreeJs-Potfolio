@@ -40,6 +40,8 @@ import {
   MsSolutions,
   walking_aiesec,
   walking_logo,
+  machineLearning,
+  devops,
 //projects
 birdy,
 studyflux,
@@ -76,7 +78,7 @@ const services = [
     },
     {
       title: "DEVOPS ENTHOUSIAST",
-      icon: backend,
+      icon: devops,
     },
     {
       title: "PROFESSIONAL PIANIST",
@@ -84,15 +86,15 @@ const services = [
     },
     {
       title: "MACHINE LEARNING PRACTITIONER",
-      icon: creator,
+      icon: machineLearning,
     },
     {
       title: "COMPETITIVE PROGRAMMER",
-      icon: creator,
+      icon: backend,
     },
     {
       title: "GLOBAL VONLENTEER",
-      icon: creator,
+      icon: walking_logo,
     },
     ];
     

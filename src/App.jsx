@@ -53,7 +53,8 @@ const App = () => {
          <Contact />
         <StarsCanvas /> 
         </div>
-      
+        <div className="h-[40px]"></div>
+
       </div>
     </BrowserRouter>
   );

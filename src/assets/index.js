@@ -3,6 +3,8 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import devops from "./devops.png";
+import machineLearning from "./machineLearning.png";
 // import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -41,7 +43,6 @@ import C_sharp from "./tech/C_sharp.png";
 import java from "./tech/java.png";
 
 
-
 import github from "./github.png";
 
 
@@ -72,7 +73,8 @@ export {
 
 
 
-
+machineLearning,
+devops,
   logo,
   backend,
   creator,
