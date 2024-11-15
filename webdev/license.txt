@@ -1,0 +1,11 @@
+Model Information:
+* title:	3D Clipart - WebDev
+* source:	https://sketchfab.com/3d-models/3d-clipart-webdev-f3d8f1a7174847d994ab698e265f9672
+* author:	Helindu (https://sketchfab.com/Helindu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3D Clipart - WebDev" (https://sketchfab.com/3d-models/3d-clipart-webdev-f3d8f1a7174847d994ab698e265f9672) by Helindu (https://sketchfab.com/Helindu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
