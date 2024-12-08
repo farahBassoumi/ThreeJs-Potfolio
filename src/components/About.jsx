@@ -43,7 +43,7 @@ const About = () => {
 
 
         An enthousiastic full-stack developer and a fourth-year
-        Software Engineering student at INSAT, deeply passionate about DevOps and Web Development.
+        Software Engineering student at INSAT, deeply passionate about Web Development, Devops, Machine Learning and MLops.
         <br />
       </motion.p>
 

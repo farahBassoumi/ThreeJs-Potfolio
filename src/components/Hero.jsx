@@ -59,21 +59,21 @@ const Hero = () => {
     <p>Full stack web developer</p>
   </motion.div>
 
-  {/* <motion.div
+  <motion.div
     variants={fadeIn("right", "spring", 1, 3.5)} // Third sentence with delay 0.6
     initial="initial"
     animate="animate"
   >
-    <p>Machine learning intern</p>
-  </motion.div> */}
+    <p>Machine learning and MLOps enthusiast</p>
+  </motion.div>
 
-  <motion.div
+  {/* <motion.div
     variants={fadeIn("right", "spring", 1.4, 4.5)} // Fourth sentence with delay 0.8
     initial="initial"
     animate="animate"
   >
     <p>DevOps enthusiast</p>
-  </motion.div>
+  </motion.div> */}
     </div>
         </div>
       </div>
