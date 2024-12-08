@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
-import {  textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 const fadeIn = (direction, easing, delay, duration) => ({
   initial: {
     opacity: 0,
@@ -43,49 +43,50 @@ const Hero = () => {
             Hi, I'm <span className="text-[#804af3] ">Farah</span>
           </h1>
           <div className={` ${styles.heroSubText} font-light`}>
-          <motion.div
-    variants={fadeIn("right", "spring", 0.1, 2.5)} // First sentence with delay 0.2
-    initial="initial"
-    animate="animate"
-  >
-    <p>Software engineering student</p>
-  </motion.div>
-  
-  <motion.div
-    variants={fadeIn("right", "spring", 0.6, 2.5)} // Second sentence with delay 0.4
-    initial="initial"
-    animate="animate"
-  >
-    <p>Full stack web developer</p>
-  </motion.div>
+            <motion.div
+              variants={fadeIn("right", "spring", 0.1, 2.5)} // First sentence with delay 0.2
+              initial="initial"
+              animate="animate"
+            >
+              <p>Software engineering student</p>
+            </motion.div>
 
-  <motion.div
-    variants={fadeIn("right", "spring", 1, 3.5)} // Third sentence with delay 0.6
-    initial="initial"
-    animate="animate"
-  >
-    <p>Machine learning and MLOps enthusiast</p>
-  </motion.div>
+            <motion.div
+              variants={fadeIn("right", "spring", 0.6, 2.5)} // Second sentence with delay 0.4
+              initial="initial"
+              animate="animate"
+            >    <p>Machine learning and MLOps enthusiast</p>
 
-  {/* <motion.div
+            </motion.div>
+
+            <motion.div
+              variants={fadeIn("right", "spring", 1, 3.5)} // Third sentence with delay 0.6
+              initial="initial"
+              animate="animate"
+            >
+              <p>Full stack web developer</p>
+
+            </motion.div>
+
+            {/* <motion.div
     variants={fadeIn("right", "spring", 1.4, 4.5)} // Fourth sentence with delay 0.8
     initial="initial"
     animate="animate"
   >
     <p>DevOps enthusiast</p>
   </motion.div> */}
-    </div>
+          </div>
         </div>
       </div>
-      <ComputersCanvas  />
-      <div style={{ height: "20px" }}></div>
+      <ComputersCanvas />
+      <div style={{ height: "30px" }}></div>
 
       <div
         className=" xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20 relative "
         style={{ marginTop: "-20px" }}
       >
         <a href="#about">
-         
+
           <div className="w-[32px] h-[55px]  rounded-3xl border-2 border-secondary flex justify-center items-start p-2  ">
             <motion.div
               animate={{ y: [0, 24, 0] }}
